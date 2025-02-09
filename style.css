@@ -1,0 +1,155 @@
+:root {
+    --color-primary: #4B69FD;
+    --color-secondary: rgba(255, 255, 255, 0.3);
+    --color-tertiary: #C4C4C4;
+    --color-text: #444444;
+    --color-white: #FFFFFF;
+    --gradient-primary: linear-gradient(135deg, #ff9966, #ff5e62);
+    --gradient-hover: linear-gradient(135deg, #ff5e62, #ff9966);
+    --button-shadow: 0 6px 15px rgba(255, 94, 98, 0.3);
+    --common-radius: 25px;
+}
+
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(126deg, #8ab5ed, #7da2b0, #d63b4d);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Inter", sans-serif;
+}
+
+/* Contenedor principal y banner */
+.main-content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+.header-banner {
+    flex: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0 0;
+}
+
+/* Sección de entrada */
+.input-section {
+    flex: 60%;
+    background: var(--color-secondary);
+    backdrop-filter: blur(10px);
+    border-radius: 64px 64px 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Títulos */
+.main-title {
+    font-size: 48px;
+    font-family: "Merriweather", serif;
+    font-weight: 900;
+    font-style: italic;
+    color: var(--color-white);
+}
+
+.section-title {
+    font-family: "Inter", serif;
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--color-primary);
+    margin: 10px 0;
+    text-align: center;
+}
+
+/* Input y botones */
+.input-wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 600px;
+    margin-top: 20px;
+}
+
+.input-name {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #000;
+    border-radius: var(--common-radius) 0 0 var(--common-radius);
+    font-size: 16px;
+}
+
+/* Estilos comunes para botones */
+button {
+    padding: 15px 40px;
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: var(--common-radius);
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+/* Botones específicos */
+.button-add {
+    background: var(--color-tertiary);
+    color: var(--color-text);
+    border-radius: 0 var(--common-radius) var(--common-radius) 0;
+    font-weight: normal;
+}
+
+.button-add:hover {
+    background-color: #a1a1a1;
+}
+
+/* Estilos comunes para botones principales */
+.button-draw,
+.button-reset {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    color: var(--color-white);
+    background: var(--gradient-primary);
+    box-shadow: var(--button-shadow);
+}
+
+.button-draw:hover,
+.button-reset:hover {
+    background: var(--gradient-hover);
+}
+
+.button-reset {
+    margin-top: 20px;
+}
+
+/* Listas */
+ul {
+    list-style-type: none;
+    color: var(--color-text);
+    font-size: 18px;
+    margin: 20px 0;
+}
+
+/* Imágenes en botones */
+button img {
+    margin-right: 20px;
+}
+
