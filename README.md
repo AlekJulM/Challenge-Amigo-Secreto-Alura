@@ -28,7 +28,7 @@ El proyecto consta de los siguientes archivos principales:
 1. **Clonar el repositorio:**
 
    ```bash
-   git clone https://github.com/tuusuario/Challengue-Amigo-Secreto.git
+   git clone https://github.com/tuusuario/Challengue-Amigo-Secreto-Alura.git
    ```
 
 2. **Abrir el proyecto:**
