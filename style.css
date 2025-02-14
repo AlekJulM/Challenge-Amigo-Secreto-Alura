@@ -61,8 +61,8 @@ body {
 .lists-container {
     width: 100%;
     max-width: 600px;
-    height: 200px; /* Altura fija */
-    margin: 20px 0 10px; /* Reducido el margen inferior de 20px a 10px */
+    height: 350px;  /* Increased from 250px */
+    margin: 20px 0 10px;
     overflow-y: auto; /* Scroll vertical */
     padding: 10px;
     /* Estilo para el scroll */
@@ -90,11 +90,30 @@ body {
 }
 
 .name-list li {
-    padding: 8px 15px;
-    margin: 5px 0;
-    background: rgba(255, 255, 255, 0.1);
+    padding: 12px 20px;  /* Increased padding */
+    margin: 8px 0;      /* Increased margin */
+    background: rgba(255, 255, 255, 0.2);  /* Slightly more visible */
     border-radius: var(--common-radius);
     backdrop-filter: blur(5px);
+    font-size: 20px;    /* Increased font size */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.delete-button {
+    background: none;
+    color: #ff5e62;
+    padding: 5px 10px;
+    font-size: 16px;
+    min-width: auto;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+.delete-button:hover {
+    background: rgba(255, 94, 98, 0.1);
+    transform: scale(1.1);
 }
 
 /* Títulos */
@@ -372,4 +391,5 @@ ul {
         margin: 5px 0;
     }
 }
+
 
