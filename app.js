@@ -64,3 +64,4 @@ inputAmigo.addEventListener("keydown", function(event) {
     agregarAmigo();
   }
 });
+
